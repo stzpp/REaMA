@@ -47,7 +47,6 @@ outputs = llm.generate(prompts, sampling_params)
 generated_text = [output.outputs[0].text for output in outputs]
 outputs = generated_text[:]
 
-print(tokenizer.decode(output[0], skip_special_tokens=True))
 ```
 
 REaMA should be used with this prompt format:
